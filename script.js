@@ -3,7 +3,7 @@ var kullanici=
 "ad":"Sadık",
 "soyad":"Turan",
 "yas":38,
-"adres":"kocaeli izmit"
+"adres":"kocaeli izmittt"
 }
 
 var sonuc;
