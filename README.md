@@ -1,1 +1,1 @@
-"# TEST" 
+Object Uygulamaları yapıldı.
