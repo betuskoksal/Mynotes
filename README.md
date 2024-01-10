@@ -1,1 +1,1 @@
-Object Uygulamaları yapıldı.
+Döngüler ile ilgili uygulamalar yapıldı.
