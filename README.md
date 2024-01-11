@@ -1,1 +1,1 @@
-Döngüler ile ilgili uygulamalar yapıldı.
+Fonksiyonlar ile ilgili uygulamalar yapıldı
