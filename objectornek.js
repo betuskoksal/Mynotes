@@ -65,6 +65,7 @@ var siparis_1=
             "urun_adi":"Iphone 13 Pro Max",
             "urun_url":"http://abc.com/Iphone-13-Pro-Max",
             "urun_fiyat":25000
+            
         }
     ]
 }
