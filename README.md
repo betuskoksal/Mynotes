@@ -1,2 +1,2 @@
 
-Fonksiyonlar ile ilgili uygulamalar yapıldı test
+Fonksiyonlar ile ilgili uygulamalar yapıldı
