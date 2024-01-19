@@ -68,3 +68,42 @@ var year=prompt("Model yılını giriniz");
 models.push(model);
 years.push(year);
 
+/*   ÖRNEKLER   */
+
+/* "elma, armut, muz, çilek" elemanlarına sahip bir dizi oluştur */
+var meyveler =["elma","armut","muz","çilek"];
+
+/* Dizi kaç elemanlıdır? */
+console.log(meyveler.lenght);
+
+
+/* Dizinin ilk ve son elemanı nedir? */
+/* İlk eleman */ console.log(meyveler[0]); /* (Elma) */
+
+/* Son eleman */ console.log(meyveler[meyveler.lenght-1]); /* (Çilek) */
+
+
+/* Elma dizinin bir elemanı mıdır? */
+console.log(meyveler.indexOf ("Elma"));
+
+/* Kiraz meyvesini listenin sonuna ekleyiniz */
+
+meyveler[meyveler.lenght]="kiraz";
+console.log (meyveler);
+
+/* ya da */
+
+meyveler.push("kiraz");
+console.log(meyveler);
+
+/* Dizinin son iki elemanını siliniz */
+
+meyveler.pop();
+meyveler.pop();
+console.log(meyveler);
+
+
+
+
+
+
