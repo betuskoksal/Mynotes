@@ -1,10 +1,20 @@
 /*     FOR DÖNGÜSÜ 
 Bir kod bloğunu belirli bir sayıda ve üst üste çalıştırmak için kullanılan döngüdür.
-*/
-for (var i=1; i<11; i++)
+  
+
+for (   var i=1;       i<11;           i++) 
+        Kontrol 
+        değişkeni     kontrol           kontrol
+                    oluşturulması       değişkenini 
+                                        değiştirerek 
+                                        true değer 
+                                        vermesini 
+                                        sağlayan kısım
 {
     console.log(i);
 }
+
+ */ 
 
 
 /*     WHİLE DÖNGÜSÜ 
