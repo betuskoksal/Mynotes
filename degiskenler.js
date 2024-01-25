@@ -1,10 +1,24 @@
 /*
 -DEĞİŞKEN TANIMLAMA-
-var name="Fikret";
 
--Değişkeni tarayıcıda tanımlamak için 3 yol-
+-var değişkeninin özelliği-
+
+-Değişken tanımlanırken "var, let, const" anahtar kelimelerinden biri kullanılır.
+
+-var anahtar kelimesiyle tanımlanan değişkenler, fonksiyonlar.
+içinde ve ya dışında tanımlanabilir.
+
+-Değişken değeri her zaman değiştirilebilir.
+
+*/
+
+
+/* Değişkeni tarayıcıda tanımlamak için 3 yol
+
 1) console.log(Name);
+
 2) alert(Name);
+
 3)document.write(Name);
 
 */
@@ -15,6 +29,57 @@ Name="Baki";
 console.log(Name);
 var surname="Çevik";
 console.log(surname);
+
+
+/* var ve let farkı nedir?
+
+KAPSAM (SCOPE):
+-var ile tanımlanan değişkenler fonksiyon kapsamına ait (function-scoped).
+Eğer fonksiyon  içinde tanımlanmamışlarsa global(en kapsamlı) kapsama aittir. 
+
+-Bu, değişkenin tanımlandığı fonksiyonun içinde erişilebileceği ve dışındaki kod tarafından 
+görülemeyeceği anlamına gelir.
+
+-let ile tanımlanan değişkenler, blok kapsamına aittir (block-scoped).
+Blok kapsamı, genellikle {} ile tanımlanan kod bloklarını ifade eder (örneğin, if, for, while gibi).
+
+
+YENİDEN TANIMLAMA:
+-var: Aynı değişken adıyla tekrar var ile tanımlama yapılabilir ve bu durumda önceki değer üzerine yazılır.
+
+-let: Aynı değişken adıyla tekrar let ile tanımlama yapmak hata verir.
+
+
+/* COUNT 
+-"count" genellikle bir sayıyı temsil eden bir değişken adıdır.
+
+-Bu adı kullanarak genellikle bir sayma veya hesaplama işlemi yapıldığını ifade eder. 
+
+-"count" değişkeni, bir dizi veya liste içindeki öğelerin sayısını veya 
+bir döngü içinde kaç kere belirli bir şart sağlandığını saymak gibi işlemlerde kullanılabilir.
+
+-"count" bir değişken adıdır ve bu adla tanımlanan bir değişkeni temsil eder. 
+Genellikle sayma veya hesaplama işlemlerinde kullanılır. 
+
+-Ancak, sadece "count" kelimesiyle bir değişken tanımlanmaz, genellikle bu ismi taşıyan bir değişken tanımlandıktan sonra kullanılır.
+*/
+
+/* CONST
+
+-Bir değişkenin const ile tanımlanması, bu değişkenin değerinin bir kez atanabileceği ve 
+daha sonra değiştirilemeyeceği (sabit) anlamına gelir.
+
+-const ile tanımlanan bir değişkene bir değer atanmalıdır ve bu değer bir kez atanır. 
+
+-Bir kez atandıktan sonra const ile tanımlanan değişkenin değeri değiştirilemez. 
+
+-
+
+*/
+
+var count = 10; // "count" adında bir değişken tanımlandı ve 10 değeri atanmış.
+console.log(count); // Bu değişkenin değeri (10) konsola yazdırılır.
+
 
 /*
 -JAVA SCRİPT EKRANA YAZDIRMA YÖNTEMLERİ
@@ -35,16 +100,6 @@ DEĞİŞKEN TANIMLAMA KURALALLARI
 
 */
 
-
-/* 
--var değişkeninin özelliği-
-
--Değişken tanımlanırken "var, let, const" anahtar kelimelerinden biri kullanılır
--var anahtar kelimesiyle tanımlanan değişkenler, fonksiyonlar
-içinde ve ya dışında tanımlanabilir.
--Değişken değeri her zaman değiştirilebilir.
-
-*/
 
 /* -Yan yana yazdırma- */
 
