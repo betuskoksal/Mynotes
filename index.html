@@ -8,21 +8,36 @@
     
 </head>
 <body>
-    <div class="card-header">
-        <h3 class="cart-title" id="title">Todo App 2</h3>
-    </div>
-
-    <ul id="task-List">
-        <li class="task">Görev 1</li>
-        <li class="task">Görev 2</li>
-        <li class="task">Görev 3</li>
+    <ul id="veriler">
+        <li>Test 1</li>
+        <li>Test 2</li>
     </ul>
-
-<script>
-var sonuc;
-var ul = document.getElementById("task-List");
-sonuc = ul.children[0];
-console.log(sonuc);
+    <div>
+        <button onclick="Ekle()">Ekle</button>
+        <button onclick="Sil()">Sil</button>
+        <button onclick="Degistir()">Değiştir</button>
+    </div>
+    
+    
+    <script>
+        function Ekle() {
+            var verilerListesi = document.getElementById("veriler");
+            var yeniLi = document.createElement("li");
+            yeniLi.appendChild(document.createTextNode("Yeni Test"));
+            verilerListesi.appendChild(yeniLi);
+        }
+    
+        function Sil() {
+            var verilerListesi = document.getElementById("veriler");
+            var sonLi = verilerListesi.lastElementChild;
+                verilerListesi.removeChild(sonLi);
+        }
+    
+        function Degistir() {
+            var verilerListesi = document.getElementById("veriler");
+            var ikinciLi = verilerListesi.getElementsByTagName("li")[1];
+                ikinciLi.innerHTML = "Değiştirildi";
+        }
 
 </script>
 </body>

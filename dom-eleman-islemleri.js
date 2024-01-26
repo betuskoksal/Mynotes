@@ -74,4 +74,38 @@
             
    }
 
+   örnek:
+
+   <ul id="veriler">
+        <li>Test 1</li>
+        <li>Test 2</li>
+    </ul>
+    <div>
+        <button onclick="Ekle()">Ekle</button>
+        <button onclick="Sil()">Sil</button>
+        <button onclick="Degistir()">Değiştir</button>
+    </div>
+    
+    
+    <script>
+        function Ekle() {
+            var verilerListesi = document.getElementById("veriler");
+            var yeniLi = document.createElement("li");
+            yeniLi.appendChild(document.createTextNode("Yeni Test"));
+            verilerListesi.appendChild(yeniLi);
+        }
+    
+        function Sil() {
+            var verilerListesi = document.getElementById("veriler");
+            var sonLi = verilerListesi.lastElementChild;
+                verilerListesi.removeChild(sonLi);
+        }
+    
+        function Degistir() {
+            var verilerListesi = document.getElementById("veriler");
+            var ikinciLi = verilerListesi.getElementsByTagName("li")[1];
+                ikinciLi.innerHTML = "Değiştirildi";
+        }
+
+
 */

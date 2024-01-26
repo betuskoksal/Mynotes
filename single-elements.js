@@ -56,4 +56,4 @@ sonuc= document.querySelector(".card-header");
 
 /* Elemana div olarak ulaşmak için:  */
 
-sonuc= document.querySelector("div");  
+sonuc= document.querySelector("div");
