@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Eğitimi</title>
+    <style type="text/css"> </style>
+</head>
+<body>
+    <h1 onclick="icerikDegistir(this)"> Udemy Kursları </h1>
+
+    <button onclick="displayDate()"> Tarih ve saati göster </button>
+
+    <p id="tarihsaat"></p>
+
+    <script type="text/javascript">
+
+        function icerikDegistir(icerik)
+        {
+            icerik.innerHTML="Udemy Kurslarına Hoşgeldin";
+        }
+
+    function displayDate() {
+        document.getElementById("tarihsaat").innerHTML=Date();
+    } 
+
+    </script>
+
+</body>
+</html>
