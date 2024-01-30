@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="islem()">Kontrol Et</button>
+    <div id="sonuc"></div>
+
+
+
+<script> 
+ function islem() { 
+    var e=confirm("Onaylıyor musun?");
+
+    if(e==true) {
+        document.getElementById("sonuc").innerHTML="Onay verildi";
+} 
+
+else {
+    document.getElementById("sonuc").innerHTML="Onay verilmedi";
+}
+
+}
+</script>
+</body>
+</html>
