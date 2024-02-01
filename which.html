@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<button onmousedown="islem()">Mouse tuşlarından birine tıkla</button>
+
+<div id="sonuc"></div>
+
+
+
+<script>
+
+
+/*
+    which
+
+    1-Mouse sol tuşı
+    2-Orta tuş
+    3-Sağ tuş
+
+*/
+
+function islem() {
+
+    document.getElementById("sonuc").innerHTML="Tıladığınız Tuş:"+event.which;
+}
+
+
+</script>
+
+</body>
+</html>
