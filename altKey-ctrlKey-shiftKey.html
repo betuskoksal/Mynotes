@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-------------------           ctrlKey            --------------------------------------------------------------->
+
+<button onmousedown="islemCtrl(event)">CTRL tuşuna basarak tıkla</button>
+
+<script>
+
+        function islemCtrl(event) {
+
+            if (event.ctrlKey) { //bir JavaScript olayı (event) sırasında kullanıcının "Ctrl" (Control) tuşuna basılı olup olmadığını kontrol eden bir özelliktir. 
+
+                alert("CTRL tuşu basılıyken mouse ile tıkladınız");
+            }
+
+            else {
+                
+                alert("CTRL tuşuna basılmadı");
+            }
+        }
+
+</script>
+
+<!-------------------           altKey            --------------------------------------------------------------->
+
+<button onmousedown="islemAlt(event)">Alt tuşuna basarak tıkla</button>
+
+<script>
+
+    function islemAlt(event) {
+
+        if (event.altKey) {  
+
+            alert("Alt tuşu basılıyken mouse ile tıkladınız");
+        }
+
+        else {
+            
+            alert("Alt tuşuna basılmadı");
+        }
+    }
+
+</script>
+
+<!-------------------           shiftKey            --------------------------------------------------------------->
+
+
+<button onmousedown="islemShift(event)">Shift tuşuna basarak tıkla</button>
+
+<script>
+
+    function islemShift(event) {
+
+        if (event.shiftKey) { 
+
+            alert("Shift tuşu basılıyken mouse ile tıkladınız");
+        }
+
+        else {
+            
+            alert("Shift tuşuna basılmadı");
+        }
+    }
+
+</script>
+</body>
+</html>
