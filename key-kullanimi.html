@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input onkeydown="islem()" type="text" name="" placeholder="Bir tuşa basın">
+
+<div id="sonuc"></div>
+
+<script> 
+
+    function islem() {
+
+        var x=event.key;
+
+        document.getElementById("sonuc").innerHTML="Unicode Karakter : "+x;
+    }
+
+</script>
+</body>
+</html>
+
+<!-- key:
+
+Klavyeden hangi tuşa bastığınızda onu döndürür.(ok tuşlarının yönünü)
+
+-->
