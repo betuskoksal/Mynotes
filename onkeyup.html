@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="sec" onkeyup="up()" onkeydown="down()" type="text" placeholder="Bir tuşa basın" name="">
+
+    <script>
+
+        function down() {
+
+            document.getElementById("sec").style.backgroundColor="purple";
+        }
+
+        function up() {
+
+            document.getElementById("sec").style.backgroundColor="blue";
+        }
+
+    </script>
+
+
+
+<!-- onkeyup :
+
+-Klavyeden bir tuşun bırakıldığı (tuşa basılmadığı) anı temsil eder. 
+Bu olay, klavyeden bir tuşa basılıp ardından tuşa basmayı bıraktığınızda tetiklenir.
+
+
+-----onkeyup : basma sırasında gerçeklerşir.
+
+-->
+
+</body>
+</html>
