@@ -7,31 +7,21 @@
 </head>
 <body>
 
-<button onmousedown="islem()">Mouse tuşlarından birine tıkla</button>
+<input onkeypress="islem()" type="text" name="" placeholder="Bir tuşa basın">
 
 <div id="sonuc"></div>
 
+<script> 
 
+    function islem() {
 
-<script>
+        var x=event.which;
 
-
-/*
-    which
-
-    1-Mouse sol tuşı
-    2-Orta tuş
-    3-Sağ tuş
-
-*/
-
-function islem() {
-
-    document.getElementById("sonuc").innerHTML="Tıladığınız Tuş:"+event.which;
-}
-
+        document.getElementById("sonuc").innerHTML="Unicode Karakter : "+x;
+    }
 
 </script>
+
 
 </body>
 </html>
