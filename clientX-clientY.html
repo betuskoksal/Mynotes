@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img onclick="islem(event)" src="./img/farkbulma.jpg">
+
+    <div id="sonuc"></div>
+    <script>
+
+        function islem(event) {
+
+            var x=event.clientX;
+            var y=event.clientY;
+
+            document.getElementById("sonuc").innerHTML="X Koordinatı : "+x+" Y Koordinatı : "+y;
+        }
+
+
+    </script> 
