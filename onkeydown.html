@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input onkeydown="islem()" type="text" name="" placeholder="Bir tuşa basın..">
+    <br><br>
+    <div id="sonuc"></div>
+
+    <script>
+
+        i=0;
+        function islem() {
+
+            i+=1;
+            document.getElementById("sonuc").innerHTML=i; //Klavyede kaç kez tuşa bastığımızı sayıyor
+
+        }
+
+    </script>
+</body>
+</html>
+
+
+<!--  onkeydown nedir? 
+
+Bu olay, bir tuşa klavyeden basıldığında gerçekleşir. Yani, bir tuşa basıldığında, bu olay tetiklenir. 
+
+-->
