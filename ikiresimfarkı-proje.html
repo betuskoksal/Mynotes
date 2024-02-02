@@ -11,6 +11,7 @@
 <img onclick="islem(event)" src="./img/farkbulma.jpg">
 
 <div id="sonuc"></div>
+<div id="baslik"></div>
 
 <script>
 
@@ -20,6 +21,7 @@
         var y = event.clientY;
 
        
+        var sonucElement = document.getElementById("sonuc");
 
         document.getElementById("sonuc").innerHTML = "X Koordinatı: " + x + " Y Koordinatı: " + y;
 
@@ -35,6 +37,13 @@
             document.getElementById("sonuc").innerHTML = "Ağaç Bulundu Koordinatları: X Koordinatı: " + x + " Y Koordinatı: " + y;
 
         }
+
+        sonucElement.style.fontSize = "25px"; 
+        sonucElement.style.color = "rgb(240, 53, 53)"; 
+
+        var baslikElement = document.getElementById("baslik");
+        baslikElement.style.fontSize = "50px"; 
+        baslikElement.style.color = "rgb(240, 53, 53)"; 
 
     }
 </script>
