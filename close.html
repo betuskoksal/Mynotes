@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="sayi1" type="text" name="">
+    <input id="sayi2" type="text" name="">
+
+    <button onclick="islem()">Topla ve yeni bir sayfada aç</button>
+
+    <button onclick="kapat()">Kapat</button>
+
+    <script>
+
+var yeniPencere;
+
+        function islem() {  
+            var sayi1=document.getElementById("sayi1").value;
+
+            var sayi2=document.getElementById("sayi2").value;
+
+            var topla=parseInt(sayi1)+parseInt(sayi2);
+
+            yeniPencere=window.open("","yeniPencere","width=250,height=200");
+            yeniPencere.document.write("<h1>Toplama işlemi Sonucu :"+topla+"</h1>");
+        }
+
+        function kapat() {
+
+            yeniPencere.close();
+        }
+
+
+    </script>
+</body>
+</html>
