@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input id="sec" onfocusout="islem()" type="text" 
+    placeholder="Bir tuşa basın" name="">
+
+    <div id="sonuc"></div>
+
+<script>
+
+function islem() {
+
+var x=document.getElementById("sec").value;
+
+document.getElementById("sonuc").innerHTML="Yazdıkalrınız :" +x;
+
+}
+
+</script>
+</body>
+</html>
+
+<!-- 
+    
+oninput olayı, bir öğenin içeriği her değiştiğinde çalışır ve bu sayede anlık 
+geri bildirim veya dinamik işlemler gerçekleştirilebilir. Özellikle, kullanıcı 
+bir metin kutusuna yazı yazdığında veya bir seçim yaptığında bu olay tetiklenir.
+
+-->
