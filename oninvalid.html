@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+    <input id="sec" required="" oninvalid="alert('boş bırakamazsınız')" type="text" 
+    placeholder="Bir tuşa basın" name="">
+    <button type="submit">Gönder</button>
+    </form>
+
+<script>
+
+function islem() {
+
+var x=document.getElementById("sec").value;
+
+document.getElementById("sonuc").innerHTML="Yazdıkalrınız :" +x;
+
+}
+
+</script>
+</body>
+</html>
+
+<!-- required : 
+
+HTML form elemanlarına eklenen bir özelliktir. Bu özellik, belirli bir form elemanının 
+(genellikle bir input alanı) boş bırakılamamasını veya seçilmemesini sağlar. 
+Yani, kullanıcının formu gönderirken belirli bir bilgiyi girmesini veya seçmesini 
+zorunlu kılar.
+
+    oninvalid :
+
+HTML formlarındaki bir input alanının geçersiz bir değer içerdiğinde tetiklenen 
+bir JavaScript olayıdır. Bu olay, kullanıcının formu göndermeden önce hatalı bir 
+giriş yaptığında veya geçerli olmayan bir değer girdiğinde çalışır.
+
+-->
