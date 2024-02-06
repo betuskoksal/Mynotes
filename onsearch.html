@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+        <input id="sec" required="" onsearch="islem()" type="search">
+
+        <div id="sonuc"></div>
+
+    
+    <script>
+    
+    function islem() {
+        var x=document.getElementById("sec");
+
+        document.getElementById("sonuc").innerHTML="Aranan kelime" +x.value;
+    
+    }
+    
+    </script>
+</body>
+</html>
+
+<!-- onsearch :
+
+Arama yapıldığı anda olay tetiklenir.
+-->
