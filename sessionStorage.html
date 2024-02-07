@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="olustur()">Session oluştur</button>
+    <button onclick="yaz()">Session oku ve yaz </sbutton>
+    <button onclick="hepsiniSil()">Bütün Session Sil</button>
+
+<button onclick="sil()">Session sil</button>
+
+<div id="sonuc"></div>
+
+<script>
+
+    function olustur() {
+
+        sessionStorage.setItem("ad","Betül");
+        sessionStorage.setItem("soyad","Köksal");
+
+    }
+
+
+    function yaz() {
+
+        document.getElementById("sonuc").
+        innerHTML=sessionStorage.getItem("ad")+""+sessionStorage.getItem("soyad");
+
+}
+
+
+   function sil() {
+
+        sessionStorage.removeItem("ad","Betül1");
+        document.getElementById("sonuc").innerHTML="";
+
+    }
+
+</script>
+
+</body>
+</html>
+<!-- sessionStorage :
+
+    Tarayıcımız kapatılana kadar olan dosyalarımızı depolamamıza yarar.
+-->
