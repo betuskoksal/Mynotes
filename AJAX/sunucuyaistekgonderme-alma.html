@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HttpRequest Nesnesi</h2>
+
+    <script>
+
+        var xhttp=new XMLHttpRequest();
+
+        console.log(xhttp);
+
+        xhttp.open("GET","kurslar.txt", true)
+        xhttp.send();
+
+    </script>
+</body>
+</html>
+
+<!-- Open fonksiyonunun temel kullanımı : 
+
+        xmlhttp.open(method, url, async)
+
+=> method: HTTP isteğinin tipini belirtir, genellikle 
+"GET" veya "POST" kullanılır.
+
+=> url: İstenen kaynağın URL'sini belirtir.
+
+=> async: İstek asenkron mu yoksa senkron mu olacaksa bu parametre 
+ile belirtilir. Genellikle true (asenkron) olarak kullanılır. 
+
+-->
+
+<!-- Send fonksiyonunun temel kullanımı :
+
+        xmlhttp.send(data)
+
+=> data: İsteğin gövdesine eklenecek verileri belirtir. 
+Özellikle POST isteklerinde kullanılır.
+
+
+Veritabanı güncellemesi yapacak isek POST kullanırız
+
+Sunucuya büyük miktarda veri gönderecek isek POSt kullanırız 
+
