@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JSON PARSE</h2>
+<script>
+
+var xmlhttp= new XMLHttpRequest();
+
+xmlhttp.open("GET","json-veri.txt",true);
+xmlhttp.send();
+
+xmlhttp.onreadystatechange=function() {
+
+    if (this.readyState==4 && this.status==200) { 
+
+    var veriler=JSON.parse(this.responseText);
+
+    console.log(veriler);
+    }
+}
+
+</script>
+
+
+
+</body>
+</html>
+
+<!-- status : 
+    200 = işlem tamam
+    403 = yasak
+    404 = bulunamadı
+-->

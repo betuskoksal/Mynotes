@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON Veri Gönderme</h1>
+
+    <button onclick="gonder()">JSON verilerini gönder</button>
+    <script>
+
+        function gonder() {
+
+            var veriler={
+
+                ad:"emrah",
+                soyad:"yuksel",
+                kurum:"udemy"
+            }
+
+            var hazir=JSON.stringify(veriler);
+
+            window.location="json-oku.php?veriler"
+
+
+        }
+
+    </script>
+</body>
+</html>
+
+<!-- Stringify :
+
+Bir nesnenin veya veri yapısının metinsel bir temsilini oluşturarak onu bir dize (string) haline getirme işlemidir."
+-->
+
+
+
+<!-- window.location :
+
+JavaScript nesnesi, tarayıcı penceresinin URL'sini kontrol etmek ve manipüle etmek için kullanılır; 
+sayfanın mevcut URL'sini alma, yeni bir URL'ye yönlendirme veya sayfa üzerinde URL ile ilgili değişiklikler 
+yapma gibi işlevlere olanak tanır.
+-->

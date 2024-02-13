@@ -1,0 +1,29 @@
+{
+
+"ad":"betül",
+"soyad":"köksal",
+"kurslar":"[
+
+            {"kursad":"php","yayinci":"udemy"},
+            {"kursad":"bootstrap4","yayinci":"udemy"},
+            {"kursad":"javascript","yayinci":"udemy"},
+            {"kursad":"jquery","yayinci":"udemy"},
+
+            ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
