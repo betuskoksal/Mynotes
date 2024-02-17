@@ -5,26 +5,43 @@ const password = document.getElementById("password");
 const repassword = document.getElementById("repassword");
 
 
+function error (input, message) {
+    input.className= "form-control is-invalid";
+    const div= input.nextElementSibling;
+    div.innerText = message;
+    div.className="invalid-feedback"; 
+}
+
+function success (input) {
+    input.className= "form-control is-invalid";
+}
+
+
 form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     if (username.value === "") {
-        username.className = "form-control is-invalid"
+        error(username, "username required");
+    } else {
+        success(username);
     }
 
-
     if (username.value === "") {
-        email.className = "form-control is-invalid"
+        error(email, "email required");
+    }else {
+        success(email);
     }
 
-
     if (username.value === "") {
-        password.className = "form-control is-invalid"
+        error(password, "password required");
+    }else {
+        success(password);
     }
 
-
     if (username.value === "") {
-        repassword.className = "form-control is-invalid"
+        error(repassword, "repassword required");
+    }else {
+        success(repassword);
     }
 
 });
