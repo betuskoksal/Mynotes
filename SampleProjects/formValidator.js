@@ -4,46 +4,38 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const repassword = document.getElementById("repassword");
 
-
-function error (input, message) {
-    input.className= "form-control is-invalid";
-    const div= input.nextElementSibling;
+function error(input, message) {
+    input.className = "form-control is-invalid";
+    const div = input.nextElementSibling;
     div.innerText = message;
-    div.className="invalid-feedback"; 
+    div.className = "invalid-feedback";
 }
 
-function success (input) {
-    input.className= "form-control is-invalid";
+function success(input) {
+    input.className = "form-control is-valid";
 }
 
+function checkEmail(input) {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+    if (re.test(input.value)) {
+        success(input);
+    } else {
+        error(input, "invalid email address");
+    }
+}
+
+function checkRequired(inputs) {
+    inputs.forEach(function (input) {
+        if (input.value === '') {
+            error(input, `${input.id} is required.`);
+        } else {
+            success(input);
+        }
+    });
+}
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
-
-    if (username.value === "") {
-        error(username, "username required");
-    } else {
-        success(username);
-    }
-
-    if (username.value === "") {
-        error(email, "email required");
-    }else {
-        success(email);
-    }
-
-    if (username.value === "") {
-        error(password, "password required");
-    }else {
-        success(password);
-    }
-
-    if (username.value === "") {
-        error(repassword, "repassword required");
-    }else {
-        success(repassword);
-    }
-
+    checkRequired([username, email, password, repassword]);
 });
-
-
