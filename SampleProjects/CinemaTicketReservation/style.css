@@ -6,6 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     flex-direction: column;
+    color:#fff;
 }
 
 .seat {
@@ -24,6 +25,12 @@ body {
 .seat.reserved{
 
     background-color: #fff;
+}
+
+.seat:not(.reserved):hover {
+
+    cursor: pointer;
+    transform: scale(1.3);
 }
 
 .seat:nth-of-type(2) {
@@ -58,11 +65,17 @@ body {
     padding: 5px 10px;
     color: #777;
     display: flex;
-    align-items: center; /* .info elemanını dikeyde ortala */
-    justify-content: center; /* .info elemanını yatayda ortala */
 }
 
 .info li {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 10px;
 }
 
+p.text span{
+
+    color: rgb(247, 243, 29);
+}

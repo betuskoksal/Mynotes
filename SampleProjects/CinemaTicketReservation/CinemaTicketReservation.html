@@ -65,29 +65,33 @@
     <div class="movie-list">
         <select id="movie">
             <option disabled="Choose a Movie"></option>
-            <option value="20">movie 1</option>
-            <option value="22">movie 2</option>
-            <option value="25">movie 3</option>
+            <option value="100">movie 1</option>
+            <option value="120">movie 2</option>
+            <option value="110">movie 3</option>
         </select>
 
     </div>
 
-    <ul>
+    <ul class="info">
         <li>
             <div class="seat selected"></div>
-            <span>Selected</span>
+            <small>Selected</small>
         </li>
 
         <li>
             <div class="seat"></div>
-            <span>Empty</span>
+            <small>Empty</small>
         </li>
 
         <li>
             <div class="seat reserved"></div>
-            <span>Full</span>
+            <small>Full</small>
         </li>
     </ul>
+
+<p class="text">
+    <span id="count">3</span> Cost calculated for 3 seats: <span id="amount">300₺</span>
+</p>
 
 
 
