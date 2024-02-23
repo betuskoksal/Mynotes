@@ -49,3 +49,21 @@ button {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
 }
+
+button:hover {
+    background-color: #ec691c;
+}
+
+.operator {
+    color: #d6440a;
+}
+
+.clear {
+    background-color: #177e39;
+    border-color: #000000;
+    color: #fff;
+}
+
+.clear:hover {
+    background-color:#ec691c;
+}
