@@ -33,9 +33,6 @@ console.log(soru.cevabiKontrolEt("c"));
 console.log(soru.cevabiKontrolEt("b"));
 */
 
-
-
-
 //  NESNE OLUŞTURMA: CONSTRUCTOR
 
     function Soru (soruMetni, cevapSecenekleri, dogruCevap) {
@@ -48,16 +45,33 @@ console.log(soru.cevabiKontrolEt("b"));
     }
 
     let soru1 = new Soru("Hangisi javascript paket yönetim uygulamasıdır?", {a: "Node.js", b: "Typescript", c: "Npm" }, "c");
-    let soru2 = new Soru("Hangisi .net paket yönetim uygulamasıdır?", {a: "Node.js", b: "nuget", c: "Npm" }, "b");
+    let soru2 = new Soru("Hangisi .net paket yönetim uygulamasıdır?", {a: "Node.js", b: "Nuget", c: "Npm" }, "b");
 
 let sorular = [
-    new Soru = new Soru("Hangisi js paket yönetim uygulamasıdır?", {a: "Node.js", b: "Typescript", c: "Npm" }, "c"),
+    new Soru = new Soru("Hangisi javascript paket yönetim uygulamasıdır?", {a: "Node.js", b: "Typescript", c: "Npm" }, "c"),
     new Soru = new Soru("Hangisi javascript paket yönetim uygulamasıdır?", {a: "Node.js", b: "Typescript", c: "Npm" }, "c"),
     new Soru = new Soru("Hangisi javascript paket yönetim uygulamasıdır?", {a: "Node.js", b: "Typescript", c: "Npm" }, "c"),
     new Soru = new Soru("Hangisi javascript paket yönetim uygulamasıdır?", {a: "Node.js", b: "Typescript", c: "Npm" }, "c")
 
 ];
-    console.log(soru1.soruMetni);
-    console.log(soru1.dogruCevap);
-    console.log(soru1.cevabiKontrolEt("c"));
-    console.log(soru1.cevabiKontrolEt("a"));
+
+function Quiz(sorular) {
+    this.sorular= sorular;
+    this.soruIndex = 0;
+}
+
+Quiz.prototype.soruGetir = function() {
+    return this.sorular[this.soruIndex];
+}
+
+const quiz = new Quiz(sorular);
+
+document.querySelector(".btn-start").addEventListener("click", function() {
+    if (quiz.sorular.length != quiz.soruIndex) { 
+    console.log(quiz.soruGetir());
+    quiz.soruIndex += 1;
+    }else {
+        console.log("quiz bitti");
+    }
+})
+
